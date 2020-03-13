@@ -2,18 +2,18 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Do a Barrel Roll"
+            "text": "Item Leak"
         },
         "description": {
-            "text": "Pack your first barrel"
+            "text": "Break a barrel"
         },
         "icon": {
-            "item": "minecraft:shulker_box"
+            "item": "minecraft:stick"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": false
+        "hidden": true
     },
     "criteria": {
         "custom": {
@@ -22,7 +22,7 @@
                 "items": [
                     {
                         "item": "minecraft:barrel",
-                        "nbt": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"text\":\"Poor Man\\'s Shulker Box\"}'}}"
+                        "nbt": "{display:{Name:'{\"italic\":false,\"color\":\"red\",\"text\":\"Broken Poor Man\\'s Shulker Box\"}'}}"
                     }
                 ]
             }

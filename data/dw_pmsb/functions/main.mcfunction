@@ -12,5 +12,6 @@ execute as @a[scores={dw_pmsb_sneak=1..}] run scoreboard players reset @s dw_pms
 execute as @a[scores={dw_pmsb_mined=1..}] run scoreboard players reset @s dw_pmsb_mined
 tag @a[tag=dw_pmsb_pack] remove dw_pmsb_pack
 
-# add hermit-root advancement
+# add hermit advancement
 advancement grant @a only dw_hermit:root
+advancement grant @a only dw_hermit:pmsb

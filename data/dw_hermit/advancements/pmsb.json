@@ -1,0 +1,29 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Poor Man's Shulker Box"
+        },
+        "description": {
+            "text": "Datapack installed"
+        },
+        "icon": {
+            "item": "minecraft:barrel"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "commands": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "commands"
+        ]
+    ],
+    "parent": "dw_hermit:root"
+}
