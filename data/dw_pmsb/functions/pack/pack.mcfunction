@@ -17,3 +17,5 @@ execute if score @s dw_pmsb_misc matches 0 unless entity @s[tag=dw_pmsb_invalid]
 
 # kill item
 kill @s[tag=dw_pmsb_kill]
+
+scoreboard players reset @a[distance=..3] dw_pmsb_sneak

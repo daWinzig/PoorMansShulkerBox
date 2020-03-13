@@ -7,9 +7,7 @@ execute at @a[tag=dw_pmsb_pack] align xyz positioned ~.4 ~-.8 ~.4 as @e[type=ite
 # run mined if barrel is broken
 execute as @a[scores={dw_pmsb_mined=1..}] at @s as @e[type=item,distance=..7,nbt={Item:{tag:{display:{Name:'{"italic":false,"color":"white","text":"Poor Man\'s Shulker Box"}'}}}}] unless data entity @s Item.tag.display.Lore at @s run function dw_pmsb:mine/mined
 
-# clean up scores / tags
-execute as @a[scores={dw_pmsb_sneak=1..}] run scoreboard players reset @s dw_pmsb_sneak
-execute as @a[scores={dw_pmsb_mined=1..}] run scoreboard players reset @s dw_pmsb_mined
+# clean up tag
 tag @a[tag=dw_pmsb_pack] remove dw_pmsb_pack
 
 # add hermit advancement
