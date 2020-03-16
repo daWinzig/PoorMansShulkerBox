@@ -7,8 +7,10 @@ execute if entity @s[nbt={Item:{tag:{display:{Name:'{"text":"Shulkerbox"}'}}}}] 
 # check barrel name
 execute unless entity @s[nbt={Item:{tag:{display:{Name:'{"italic":false,"color":"white","text":"Poor Man\'s Shulker Box"}'}}}}] run tag @s add dw_pmsb_invalid
 
+# create 'packing' particle effect
 execute align xyz positioned ~.5 ~.5 ~.5 run particle minecraft:block minecraft:barrel ~ ~ ~ 0 0 0 1 10
 
+# set random 'is finished' (if 0)
 execute store result score @s dw_pmsb_misc run data get entity @s UUIDMost 0.0000000001
 scoreboard players operation @s dw_pmsb_misc %= dw_pmsb_Mod dw_pmsb_misc
 
@@ -18,4 +20,5 @@ execute if score @s dw_pmsb_misc matches 0 unless entity @s[tag=dw_pmsb_invalid]
 # kill item
 kill @s[tag=dw_pmsb_kill]
 
+# clean up
 scoreboard players reset @a[distance=..3] dw_pmsb_sneak
