@@ -8,7 +8,7 @@ execute if entity @s[nbt={Item:{tag:{display:{Name:'{"text":"Shulkerbox"}'}}}}] 
 execute unless entity @s[nbt={Item:{tag:{display:{Name:'{"italic":false,"color":"white","text":"Poor Man\'s Shulker Box"}'}}}}] run tag @s add dw_pmsb_invalid
 
 # create 'packing' particle effect
-execute align xyz positioned ~.5 ~.5 ~.5 run particle minecraft:block minecraft:barrel ~ ~ ~ 0 0 0 1 10
+execute if entity @s[nbt={Item:{tag:{display:{Name:'{"italic":false,"color":"white","text":"Poor Man\'s Shulker Box"}'}}}}] align xyz positioned ~.5 ~.5 ~.5 run particle minecraft:block minecraft:barrel ~ ~ ~ 0 0 0 1 10
 
 # set random 'is finished' (if 0)
 execute store result score @s dw_pmsb_misc run data get entity @s UUIDMost 0.0000000001
